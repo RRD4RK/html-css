@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        article{
+            background-color:aqua ;
+            width: 100vh;
+            height: 100vw;
+            position: relative;
+        }
+        article section{
+            height: 300px;
+            width: 200px;
+            background-color: brown;
+            position: absolute;
+        }
+        section{
+            height: 100px;
+            width: 200px;
+            background-color: pink;
+        }
+        article section:nth-child(1){
+            top: 30px;
+            left: 30px;
+            background-color: blueviolet;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+    <section></section>
+    <article>
+        <section>Caixa 1</section>
+        <section>Caixa 2</section>
+    </article>
+</body>
+</html>

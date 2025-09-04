@@ -1,9 +1,36 @@
+
 article section{
     width: 100vw;
-   height: 100vw;
+   height: 40vw;
+   background-color: chocolate;
+   margin-bottom: 5px;
  }
-        
 
-h2{
-    font-size: 20px;
+.par{
+    background-color: bisque;
+}
+
+#btop i{
+    font-size: 40px;
+    color: black;
+}
+
+article section:nth-child(3n+1){
+    background-color: blue;
+}
+
+article section:nth-child(2)::after{
+    content: "AFTER";
+    background-color: green;
+}
+
+article section:nth-child(2)::before{
+    content: "BEFORE";
+    background-color: green;
+}
+
+#btop{
+    position: fixed;
+    bottom: 0;
+    left: 10vw;
 }
